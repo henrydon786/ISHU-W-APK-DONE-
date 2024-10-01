@@ -3,47 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>𝐙𝐎𝐇𝐀𝐍 𝐊𝐈𝐍𝐆 𝐒𝐄𝐑𝐕𝐄𝐑</title>
     <style>
+        /* CSS for styling elements */
         body {
-            background-gif: url('https://i.imgur.com/nGNgYht.mp4');
-            color: yellow;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            overflow: hidden; /* Hide overflow to prevent scrollbars */
             margin: 0;
             font-family: Arial, sans-serif;
         }
-        .container {
+        .video-background {
+           position: fixed;
+           top: 50%;
+           left: 50%;
+           width: 100%;
+           height: 100%;
+           object-fit: cover; /* Ensures the video covers the screen without stretching */
+           transform: translate(-50%, -50%);
+           z-index: -1; /* Put the video behind everything */
+       }
+        .header {
+            background-color: transparent;
+            padding: 20px;
             text-align: center;
         }
-        input[type="password"], input[type="submit"] {
+        .header h1 {
+            color: #fff;
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+         text-align: center;
+         color: white;
+         }
+        input[type="username"], input[type="password"], input[type="submit"] {
             padding: 10px;
             margin: 10px;
-            border-radius: 5px;
-            border: none;
+            border-radius: 20px;
+            border: 5px;
+            color: black;
         }
         input[type="submit"] {
-            background-color: pink;
-            color: blue;
+            background-color: Red;
+            color: white;
             cursor: pointer;
         }
-        .error {
-            color: red;
-        }
     </style>
+    <script>
+        function playVideo() {
+            var video = document.getElementById('bg-video');
+            video.play();
+        }
+    </script>
 </head>
-<body>
+<body onclick="playVideo()">
+    <video id="bg-video" class="video-background" loop>
+        <source src="https://raw.githubusercontent.com/HassanRajput0/Video/main/lv_0_20240823174915.mp4">
+        Your browser does not support the video tag.
+    </video>
     <div class="container">
-        <h1>THIS SERVER MADE BY HENRY</h1>
+     <img src="https://i.ibb.co/PZVdJcT/20240930-183036.jpg">
+        <h1>😈𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐙𝐎𝐇𝐀𝐍 𝐊𝐈𝐍𝐆 𝐒𝐄𝐕𝐄𝐑 😈</h1>
         <form method="POST">
             <input type="password" name="password" placeholder="Enter Password" required><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit Details">
         </form>
-        {% if error %}
-            <p class="error">{{ error }}</p>
-        {% endif %}
-    </div>
+          <footer class="footer">
+        <p>© 2024 All Rights Reserved By ZOHAN KING.</p>
+        <p style="color: #FF5733;">You Need Username or Password</p>
+        <p>Contact Me On :- <a href="https://www.facebook.com/profile.php?id=61561475734756&mibextid=ZbWKwL." style="color: #FFA07A;">FACEBOOK</a></p>
+    </footer>
 </body>
-  </html>
+</html>
