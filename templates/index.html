@@ -11,6 +11,45 @@
         :root {
             --background-image: url('https://i.imgur.com/mPu4nnK.jpeg');
         }
+    </style>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <script>
+        
+        }
+
+        // Function to show services
+        function showServices() {
+            if (isTrialActive) {
+                document.getElementById('services-section').style.display = 'block'; // Show services
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <nav class="navbar p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Henry X Samar</h1>
+            <div class="lg:hidden">
+                <span id="menu-btn" class="navbar-icon text-2xl">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+        </div>
+    </nav>
+        </form>
+    </div>
+
+    <!-- Subscription Options Section -->
+    <div id="subscription-section" class="container mx-auto px-4 py-16 text-center">
+        <h2 class="text-3xl font-bold">Choose Your Subscription</h2>
+        <div class="mt-6">
+               <img src="https://i.imgur.com/1AKZp6Z.jpeg" style="width: 100%; height: auto; border-radius: 12px;">
+            <button onclick="chooseSubscription('Free Trial')" class="bg-blue-500 text-white px-4 py-2 rounded mx-2">Free Trial (7 Days)</button>
+            <button onclick="chooseSubscription('Monthly Subscription')" class="bg-red-500 text-white px-4 py-2 rounded mx-2">Monthly Subscription (500/month)</button>
+        </div>
+    </div>
+
     <!-- Services Section -->
     <div id="services-section" class="container mx-auto px-4 py-16">
         <h2 class="text-3xl font-bold text-center text-primary mb-8">𝐻𝐸𝑁𝑅𝑌 𝐗 𝑆𝐴𝑀𝐴𝑅 2.</h2>
